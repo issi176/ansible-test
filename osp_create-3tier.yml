@@ -22,7 +22,10 @@
      with_items: "{{result.ansible_facts.openstack_servers}}"
      tags: always
 
-- hosts: all
+- name: deploy common settings
+  hosts: all
+  gather_facts: false
+  become: true
   roles:
     - role: common
       tags: common
