@@ -3,6 +3,8 @@
 - name: deploy frontend
   hosts: tag_AnsibleGroup_frontends
   become: true
+  vars:
+   - apps : "{{ tag_AnsibleGroup_apps }}"
   roles:
     - role: common
       tags: common
