@@ -11,7 +11,7 @@ subnets:
    dns_nameservers:
     - 8.8.8.7
     - 8.8.8.8
-   host_routers:
+   host_routes:
     - destination: 0.0.0.0/0
       nexthop: 10.10.10.0
     - destination: 192.168.0.0/24
@@ -22,7 +22,7 @@ subnets:
    dns_nameservers:
     - 8.8.8.7
     - 8.8.8.8
-   host_routers:
+   host_routes:
     - destination: 0.0.0.0/0
       nexthop: 192.168.0.0
     - destination: 192.168.0.0/24

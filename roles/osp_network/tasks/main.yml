@@ -14,3 +14,13 @@
     dns_nameservers: "{{ item.dns_nameservers }}"
     host_routes: "{{ item.host_routers }}"
   with_items: "{{ subnets }}"
+
+- os_router:
+    cloud: ospcloud
+    state: present
+    name: "{{ item.name }}"
+    network: "{{ item.network }}"
+    external_fixed_ips: "{{ item.external_fixed_ips }}"
+    interfaces: "{{ item.interfaces }}"
+  with_items: "{{ router }}"
+
