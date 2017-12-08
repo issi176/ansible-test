@@ -3,4 +3,5 @@
     cloud: ospcloud
     name: "{{ server_name }}"
     image: "{{ image }}"
+    state: absent
 
