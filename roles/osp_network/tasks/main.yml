@@ -12,7 +12,7 @@
     name: "{{ item.name }}"
     cidr: "{{ item.cidr }}"
     dns_nameservers: "{{ item.dns_nameservers }}"
-    host_routes: "{{ item.host_routers }}"
+    host_routes: "{{ item.host_routes }}"
   with_items: "{{ subnets }}"
 
 - os_router:
